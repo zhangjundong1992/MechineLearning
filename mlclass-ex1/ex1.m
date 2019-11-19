@@ -24,7 +24,7 @@
 %
 
 %% Initialization
-clear ; close all; clc
+clear all; close all; clc
 
 %% ==================== Part 1: Basic Function ====================
 % Complete warmUpExercise.m 
@@ -60,8 +60,7 @@ iterations = 1500;
 alpha = 0.01;
 
 % compute and display initial cost
-J= computeCost(X, y, theta);
-disp(J);
+computeCost(X, y, theta)
 
 % run gradient descent
 theta = gradientDescent(X, y, theta, alpha, iterations);
